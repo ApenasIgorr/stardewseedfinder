@@ -1,0 +1,12 @@
+{
+  "hard_constraints": [
+    {"type": "traveling_cart", "item": "Rare Seed", "latest_season": "fall", "latest_day": 14, "latest_year": 1}
+  ],
+  "soft_preferences": [
+    {"weight": 2.5, "tolerance": 0.5, "constraint": {"type": "traveling_cart", "item": "Coffee Bean", "latest_season": "spring", "latest_day": 28, "latest_year": 1}},
+    {"weight": 1.0, "tolerance": 0.2, "constraint": {"type": "train", "season": "summer", "year": 1, "min_count": 3}}
+  ],
+  "search": {"mode": "random", "random_count": 4000, "random_seed": 777, "workers": 4},
+  "context": {"game_version": "1.6.x", "mode": "single"},
+  "output": {"top_n": 15, "export_formats": ["json"]}
+}

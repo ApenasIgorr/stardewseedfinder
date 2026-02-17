@@ -1,0 +1,2 @@
+# Projeto roda com biblioteca padrão Python 3.11+.
+# Opcional: PyYAML para parsing YAML e pytest para testes.
