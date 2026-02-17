@@ -1,0 +1,13 @@
+{
+  "hard_constraints": [
+    {"type": "weather", "season": "spring", "year": 1, "day": 3, "expected": "rain"},
+    {"type": "weather", "season": "spring", "year": 1, "min_rain_days": 7}
+  ],
+  "soft_preferences": [
+    {"weight": 2.0, "tolerance": 0.5, "constraint": {"type": "sequence", "source": "geode", "desired_item": "Prismatic Shard", "within_attempts": 30}},
+    {"weight": 1.5, "tolerance": 0.4, "constraint": {"type": "night_event", "event": "meteor", "latest_season": "fall", "latest_day": 28, "latest_year": 1}}
+  ],
+  "search": {"mode": "mixed", "seed_min": 1, "seed_max": 3000, "random_count": 1000, "random_seed": 2024, "workers": 4},
+  "context": {"game_version": "1.6.x", "mode": "single"},
+  "output": {"top_n": 20, "export_formats": ["json", "csv"]}
+}

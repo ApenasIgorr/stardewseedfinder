@@ -1,0 +1,12 @@
+{
+  "hard_constraints": [
+    {"type": "traveling_cart", "item": "Red Cabbage Seed", "latest_season": "summer", "latest_day": 7, "latest_year": 1},
+    {"type": "weather", "season": "spring", "year": 1, "min_rain_days": 6}
+  ],
+  "soft_preferences": [
+    {"weight": 2.0, "tolerance": 0.2, "constraint": {"type": "night_event", "event": "meteor", "latest_season": "fall", "latest_day": 28, "latest_year": 1}}
+  ],
+  "search": {"mode": "range", "seed_min": 1, "seed_max": 5000, "workers": 4, "timeout_seconds": 20},
+  "context": {"game_version": "1.6.x", "mode": "single"},
+  "output": {"top_n": 20, "export_formats": ["json", "csv"]}
+}
